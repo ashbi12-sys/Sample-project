@@ -1,0 +1,15 @@
+/* Design elements from your HTML file */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.main-title {
+    color: #24292e; /* GitHub dark gray */
+    text-align: center;
+}
+
+.description {
+    color: #586069;
+    font-size: 16px;
+}
