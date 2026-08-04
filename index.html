@@ -3,20 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Link external CSS files here -->
-    <link rel="stylesheet" href="style.css">
+    <title>Your Name - Professional Resume</title>
+    <style>
+        /* Reset margins and set up clean, readable fonts */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f4f7f6;
+            padding: 40px 20px;
+        }
+        /* Main resume container */
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        /* Header section styling */
+        header {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        header .title {
+            font-size: 1.2rem;
+            color: #16a085;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+        header .contact-info {
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: #7f8c8d;
+        }
+        header .contact-info span {
+            margin-right: 15px;
+        }
+        header a {
+            color: #16a085;
+            text-decoration: none;
+        }
+        /* Section styling */
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ecf0f1;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        /* Job and Education block layout */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            color: #34495e;
+        }
+        .item-sub {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 8px;
+        }
+        /* Lists for responsibilities and skills */
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .skills-list {
+            list-style-type: none;
+            margin-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skills-list li {
+            background: #e8f8f5;
+            color: #16a085;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        /* Print optimization to save ink and fix margins */
+        @media print {
+            body { background: none; padding: 0; }
+            .resume-container { box-shadow: none; padding: 0; max-width: 100%; }
+            header a { color: #000; }
+        }
+    </style>
 </head>
 <body>
-    <!-- Your visible website content goes here -->
-    <h1>MAIN Profile</h1>
-    <tb></tb>
-    <li></li>
-    <
-    <img src="IMG_0486.png" alt="Description" style="display: block; margin-left: auto; margin-right: auto;">
-    <h4>this is unknown</h4>
-    <p>noname</p>
-    <!-- Link external JavaScript files here -->
-    <script src="script.js"></script>
+
+<div class="resume-container">
+    <!-- Contact & Header Profile -->
+    <header>
+        <h1>Jane Doe</h1>
+        <div class="title">Full Stack Web Developer</div>
+        <div class="contact-info">
+            <span>📍 New York, NY</span>
+            <span>📞 (555) 019-2834</span>
+            <span>✉️ <a href="mailto:jane.doe@email.com">jane.doe@email.com</a></span>
+            <span>🔗 <a href="https://linkedin.com" target="_blank">LinkedIn</a></span>
+        </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section>
+        <h2>Professional Summary</h2>
+        <p>Dynamic and detail-oriented Developer with over 4 years of experience building responsive, user-centric web applications. Proven track record in improving page load speeds, collaborating in agile teams, and mastering modern JavaScript frameworks.</p>
+    
+
+    <!-- Work Experience -->
+    <section>
+        <h2>Experience</h2>
+        
+        <div class="item">
+            <div class="item-header">
+                <span>Senior Frontend Developer</span>
+                <span>Jan 2024 – Present</span>
+            </div>
+            <div class="item-sub">
+                <span>TechCorp Solutions</span>
+                <span>New York, NY</span>
+            </div>
+            <ul>
+                <li>Led a team of 4 developers to rebuild the core e-commerce platform, increasing conversion rates by 15%.</li>
+                <li>Optimized application bundles, resulting in a 30% reduction in page layout load speed.</li>
+                <li>Implemented reusable UI components using modern HTML5, CSS Grid, and React.</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div class="item-header">
+                <span>Web Developer</span>
+                <span>Jun 2022 – Dec 2023</span>
+            </div>
+            <div class="item-sub">
+                <span>WebStart Studio</span>
+                <span>Boston, MA</span>
+            </div>
+            <ul>
+                <li>Developed and deployed 20+ responsive business websites utilizing clean semantic HTML and CSS.</li>
+                <li>Collaborated closely with UI/UX designers to translate Figma mockups into pixel-perfect code.</li>
+                <li>Maintained cross-browser compatibility and optimized assets for mobile responsiveness.</li>
+            </ul>
+        </div>
+    
+
+    <!-- Core Skills -->
+    <section>
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Git & GitHub</li>
+            <li>REST APIs</li>
+            <li>Responsive Design</li>
+        </ul>
+    
+
+    <!-- Education -->
+    <section>
+        <h2>Education</h2>
+        <div class="item">
+            <div class="item-header">
+                <span>Bachelor of Science in Computer Science</span>
+                <span>Graduated May 2022</span>
+            </div>
+            <div class="item-sub">
+                <span>State University</span>
+                <span>Boston, MA</span>
+            </div>
+        </div>
+    
+</div>
+
 </body>
 </html>
