@@ -1,0 +1,109 @@
+/* Reset margins and set up clean, readable fonts */ 
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333333;
+      background-color: #f4f7f6;
+      padding: 40px 20px;
+}
+/* Main resume container */
+.resume-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+        }
+        /* Header section styling */
+        header {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        header .title {
+            font-size: 1.2rem;
+            color: #080808;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+        header .contact-info {
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: #7f8c8d;
+        }
+        header .contact-info span {
+            margin-right: 15px;
+        }
+        header a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        /* Section styling */
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ecf0f1;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        /* Job and Education block layout */
+        .item {
+            margin-bottom: 20px;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            color: #34495e;
+        }
+        .item-sub {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 8px;
+        }
+        /* Lists for responsibilities and skills */
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .skills-list {
+            list-style-type: none;
+            margin-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skills-list li {
+            color: #2B2B4F;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        /* Print optimization to save ink and fix margins */
+        @media print {
+            body { background: none; padding: 0; }
+            .resume-container { box-shadow: none; padding: 0; max-width: 100%; }
+            header a { color: #000; }
+        }
